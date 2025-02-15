@@ -1,0 +1,47 @@
+$mulberry: rgba(144, 12, 62, 0.6);
+
+$white: #ffffff;
+$orange: #f5a623;
+$red-error: red;
+$gray: #d1d5da;
+$gray-line: #bcbcbc;
+$black: #000000;
+$black-lighter: #24292e;
+$gray-lighter: #4a4a4a;
+$yellow: #fef170;
+$dark-green: #006766;
+$light-green: #008584;
+$dark-brown: #321919;
+$dark-pink: #c30f42;
+
+$purple-flat: #4500d2;
+$white-dim: #f2f2f2;
+$white-dimmer: #8e8e8e;
+
+// $linear-green: linear-gradient(308deg, #61f7a8 0%, #468d73 100%);
+$linear-green: #3ecf8e;
+// Color Scheme #1
+$base-color: $black;
+$dominant-color: $purple-flat;
+$background: $white;
+$sub-background: $white-dim;
+$line-color: $white-dimmer;
+$lend: #427ec9;
+$give: #ff6e34;
+
+/* Brands */
+$facebook-blue-gradient: linear-gradient(#5b7bd5, #4864b1) !important;
+$facebook-blue-gradient-hover: linear-gradient(#4c69ba, #3b55a0) !important;
+$facebook-text-shadow: 0 -1px 0 #354c8c;
+
+// Shadows
+$button-shadow: 1px 3px 15px 0 rgba(0, 0, 0, 0.54);
+$box-shadow: 0 0 0 1px rgba(50, 151, 211, 0.3), 0 1px 1px 0 rgba(0, 0, 0, 0.07),
+  0 0 0 4px rgba(50, 151, 211, 0.3);
+
+//Theme color
+$theme-dark-color: $dark-green;
+$theme-light-color: $light-green;
+
+//Text Color
+$content-text: $gray-lighter;

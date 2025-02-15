@@ -1,0 +1,110 @@
+@import 'variables';
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.33;
+  color: $content-text;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.33;
+  color: $content-text;
+}
+
+h3 {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.33;
+  color: $content-text;
+}
+
+a {
+  line-height: 1.5;
+  color: $content-text;
+  font-weight: 700;
+}
+
+p,
+label {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $content-text;
+}
+
+a {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+div {
+  color: $content-text;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.col {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.page-container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: $navbar-height-mobile;
+  position: relative;
+  min-height: 100vh;
+
+  @include media-breakpoint(xs) {
+    max-width: $max-width-xs;
+  }
+
+  @include media-breakpoint(sm) {
+    max-width: $max-width-sm;
+    padding-top: $navbar-height;
+  }
+
+  @include media-breakpoint(md) {
+    max-width: $max-width-md;
+  }
+
+  @include media-breakpoint(lg) {
+    max-width: $max-width-lg;
+  }
+}
+
+textarea {
+  border: 1px solid $gray;
+  border-radius: 6px;
+  transition: box-shadow 0.08s ease-in, color 0.08s ease-in;
+  box-shadow: 0 0 0 1px $gray;
+
+  &:focus,
+  &:active {
+    z-index: 2;
+    outline: none;
+    box-shadow: $box-shadow;
+  }
+}

@@ -1,0 +1,43 @@
+$logo-horizontal-border-primary: 3px solid $white;
+$logo-vertical-border-primary: 2px solid $white;
+$logo-horizontal-border-secondary: 3px solid $theme-light-color;
+$logo-vertical-border-secondary: 2px solid $theme-light-color;
+
+$border-radius: 2px;
+
+.navbar-brand {
+  font-size: 20px;
+  text-decoration: none;
+  flex: 1 0 auto;
+  order: 1;
+
+  @include media-breakpoint(sm) {
+    font-size: 25px;
+    flex: 0 0 auto;
+  }
+
+  .right {
+    margin-left: 4px;
+    border-radius: $border-radius;
+  }
+
+  &.primary {
+    .left {
+      color: $white;
+    }
+
+    .right {
+      background-color: $white;
+      color: $theme-dark-color;
+      padding: 0px 3px;
+    }
+  }
+
+  &.secondary {
+    .right {
+      color: white;
+      background-color: #656565;
+      padding: 0px 3px;
+    }
+  }
+}

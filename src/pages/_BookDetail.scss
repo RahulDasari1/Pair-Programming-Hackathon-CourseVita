@@ -1,0 +1,135 @@
+.book-details-container {
+  margin: 0 0 $padding-lg;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  .book-info-container {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+
+    @include media-breakpoint(sm) {
+      flex-basis: 60%;
+      max-width: 60%;
+    }
+  }
+
+  .book-pickup-container {
+    flex-basis: 100%;
+    text-align: left;
+    margin-top: $padding-sm;
+
+    @include media-breakpoint(sm) {
+      flex-basis: 20%;
+    }
+  }
+
+  .book-title {
+    flex-grow: 1;
+    margin-top: $padding-xs;
+    color: $gray-lighter;
+    font-size: 25px;
+    margin-bottom: $padding-xs;
+    order: 2;
+
+    @include media-breakpoint(sm) {
+      order: 1;
+    }
+  }
+
+  .btn-orange {
+    order: 1;
+    background: $orange;
+    @include media-breakpoint(sm) {
+      order: 2;
+    }
+  }
+
+  .author {
+    font-size: 14px;
+    text-align: left;
+    color: $gray-lighter;
+    padding-bottom: 4px;
+  }
+
+  .book-img {
+    width: 100%;
+    object-fit: cover;
+    margin-right: $padding-xs;
+    margin-bottom: $padding-xs;
+    max-height: 300px;
+
+    @include media-breakpoint(sm) {
+      max-height: 400px;
+    }
+  }
+
+  .book-rating {
+    display: flex;
+
+    span {
+      padding-right: $padding-xxs;
+    }
+  }
+
+  .header-description {
+    margin-top: $padding-sm;
+    margin-bottom: $padding-xxs;
+    font-size: 18px;
+    font-weight: 600;
+    color: $gray-lighter;
+  }
+
+  .book-description {
+    color: $gray-lighter;
+    font-size: 17px;
+    text-align: justify;
+  }
+
+  .header-pickup {
+    width: fit-content;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    color: $gray-lighter;
+    margin-bottom: $padding-xs;
+  }
+
+  .google-map-wrapper {
+    height: 350px;
+    width: 250px;
+    text-align: right;
+    margin-top: $padding-xs;
+    margin-bottom: $padding-xs;
+
+    @include media-breakpoint(sm) {
+      text-align: center;
+    }
+
+    > div {
+      > div {
+        &:first-child {
+          height: 350px !important;
+          width: 250px !important;
+        }
+      }
+    }
+  }
+}
+
+.book-details-page-header {
+  display: flex;
+  flex: 1 0 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: $padding-xs;
+  flex-direction: column;
+
+  @include media-breakpoint(sm) {
+    flex-direction: row;
+    align-items: center;
+  }
+}

@@ -1,0 +1,28 @@
+.sign-in-facebook-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pw-forget-link {
+  width: 100%;
+  text-align: right;
+  margin-bottom: $padding-xs;
+  text-decoration: none;
+  color: $orange;
+  padding-top: 2px;
+
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+.auth-page {
+  &.sign-in,
+  &.sign-up {
+    .auth-form {
+      margin-bottom: 0;
+    }
+  }
+}

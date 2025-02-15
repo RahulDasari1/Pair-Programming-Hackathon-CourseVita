@@ -1,0 +1,224 @@
+$description-height: 200px;
+$upload-font: 16px;
+$input-height: 40px;
+$abp-shadow: 0 3px 12px rgba(4, 5, 5, 0.5);
+
+.upload-progress {
+  &.redirect {
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    z-index: 10;
+    left: 30%;
+    top: 40%;
+    background: black;
+    width: 40%;
+    height: 15%;
+    opacity: 0.6;
+    border-radius: 30px;
+
+    > h3 {
+      margin: 40px;
+      color: white;
+      font-size: 25px;
+      align-self: center;
+    }
+
+    @include smaller-than(sm) {
+      width: 60%;
+      left: 20%;
+      text-align: center;
+      > h3 {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &.on {
+    width: 100%;
+    z-index: 10;
+    transition: all 1.8s ease;
+    position: fixed;
+    top: $navbar-height;
+    height: 4px;
+    box-shadow: 0 3px 12px rgba(4, 5, 5, 0.5);
+    left: 0px;
+    background: yellow;
+
+    > h3 {
+      display: none;
+    }
+  }
+
+  &.off {
+    position: fixed;
+    z-index: 10;
+    top: $navbar-height;
+    height: 4px;
+    box-shadow: 0 3px 12px rgba(4, 5, 5, 0.5);
+    left: 0px;
+    width: 0px;
+    background: yellow;
+
+    > h3 {
+      display: none;
+    }
+  }
+}
+.add-book-form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: -10px;
+
+  input {
+    border: 1px solid $gray;
+    border-radius: 6px;
+    transition: box-shadow 0.08s ease-in, color 0.08s ease-in;
+    box-shadow: 0 0 0 1px $gray;
+
+    &:focus,
+    &:active {
+      z-index: 2;
+      outline: none;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  .margin-bottom-10px {
+    margin-bottom: -10px;
+  }
+
+  .two-col {
+    width: 45%;
+    height: 100%;
+
+    &:last-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    > .subtitle {
+      border: none;
+      background: none;
+      margin-top: $padding-sm;
+    }
+
+    .validation-error {
+      background-color: transparent;
+      padding: 0 25px;
+      font-size: 13px;
+    }
+  }
+
+  #error-image {
+    text-align: left;
+  }
+
+  .booktype {
+    width: 100%;
+    height: $input-height;
+    background: #f8f8f8;
+    border: 1px solid $gray;
+    border-radius: 6px;
+    transition: box-shadow 0.08s ease-in, color 0.08s ease-in;
+    box-shadow: 0 0 0 1px rgba(155, 155, 155, 0.34);
+    padding: 0 $padding-sm;
+    font-size: 16px;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    option {
+      outline: none;
+      font-size: 16px;
+    }
+  }
+
+  .btn-publish {
+    box-shadow: $button-shadow;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    align-self: flex-end;
+    position: relative;
+  }
+
+  .input-description {
+    height: $description-height;
+    resize: none;
+    border-radius: 10px;
+    padding: 20px $padding-sm;
+    font-size: 16px;
+    width: 100%;
+    background-color: $white-dim;
+
+    &:focus {
+      background-color: $white;
+    }
+  }
+
+  .title-input {
+    border: 1px solid $gray;
+
+    width: 100%;
+    background: none;
+    height: $input-height;
+    border-radius: 10px;
+    padding: 0 $padding-sm;
+    font-size: 16px;
+    background-color: #f8f8f8;
+
+    &:focus {
+      background-color: $white;
+    }
+  }
+
+  .google-map-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .autocomplete-input {
+    border: 1px solid $gray;
+    border-radius: 6px;
+    transition: box-shadow 0.08s ease-in, color 0.08s ease-in;
+    box-shadow: 0 0 0 1px $gray;
+    height: $input-height;
+    width: 100%;
+    background-color: #f8f8f8;
+    font-size: 17px;
+    padding: 0px 20px;
+    margin-bottom: 50px;
+
+    &:focus {
+      background-color: $white;
+    }
+
+    &:focus,
+    &:active {
+      z-index: 2;
+      outline: none;
+      box-shadow: $box-shadow;
+    }
+  }
+
+  @include smaller-than(sm) {
+    justify-content: flex-start;
+    flex-direction: column;
+
+    .two-col {
+      width: 100%;
+    }
+
+    .input-description {
+      height: 100px;
+    }
+  }
+}

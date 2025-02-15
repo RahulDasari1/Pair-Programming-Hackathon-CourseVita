@@ -1,0 +1,53 @@
+.books-tool-bar {
+  padding: 15px 0 25px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  height: 80px;
+  .filters {
+    .on {
+      background: $theme-light-color;
+    }
+    > * {
+      margin-right: 10px;
+      @include media-breakpoint(sm) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  @include smaller-than(sm) {
+    justify-content: center;
+  }
+}
+
+.btn-add-book {
+  width: 156px;
+  height: 40px;
+  background-color: $theme-dark-color;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+
+  @include smaller-than(sm) {
+    .desktop {
+      display: none;
+    }
+    border-radius: 50%;
+    font-size: 30px;
+    width: 60px;
+    position: fixed;
+    bottom: 2.5%;
+    right: 6%;
+    z-index: 998;
+    height: 60px;
+  }
+
+  .desktop {
+    margin-left: 10px;
+  }
+}

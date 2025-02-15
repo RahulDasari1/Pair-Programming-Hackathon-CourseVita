@@ -1,0 +1,29 @@
+.admin-label {
+  display: none;
+}
+
+.sign-up {
+  .auth-form {
+    input {
+      &:last-of-type {
+        margin-bottom: $padding-sm;
+      }
+    }
+  }
+}
+
+.auth-form {
+  input {
+    border: 1px solid $gray;
+    border-radius: 6px;
+    transition: box-shadow 0.08s ease-in, color 0.08s ease-in;
+    box-shadow: 0 0 0 1px $gray;
+
+    &:focus,
+    &:active {
+      z-index: 2;
+      outline: none;
+      box-shadow: $box-shadow;
+    }
+  }
+}

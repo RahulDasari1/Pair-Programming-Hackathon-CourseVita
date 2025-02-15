@@ -1,0 +1,144 @@
+$btn-height: 35px;
+$border-radius: 20px;
+$btn-lr-padding: 10px;
+
+@mixin button-bg() {
+  transition: all 0.3s ease;
+
+  @include media-breakpoint(sm) {
+    &:not([disabled]) {
+      &:hover {
+        filter: brightness(108%);
+        transition: all 0.3s ease;
+      }
+      &:active {
+        filter: brightness(115%);
+        transition: all 0.3s ease;
+      }
+    }
+  }
+}
+
+@mixin button-bg-darken() {
+  @include button-bg();
+  @include media-breakpoint(sm) {
+    &:not([disabled]) {
+      &:hover {
+        filter: brightness(92%);
+      }
+      &:active {
+        filter: brightness(85%);
+      }
+    }
+  }
+}
+
+.btn {
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+  border: none;
+  border-radius: $border-radius;
+  text-decoration: none;
+  padding: 0 $padding-xs;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: Helvetica;
+  border-radius: $border-radius;
+  height: $btn-height;
+  background: $theme-dark-color;
+  @include button-bg();
+}
+
+.btn-orange {
+  @include button-bg();
+  background: $orange;
+}
+
+.btn-black {
+  width: auto;
+  font-weight: bold;
+  height: 40px;
+  padding: 0 $padding-xs;
+  background: $theme-dark-color;
+  align-self: flex-start;
+  margin-top: 20px;
+  position: relative;
+  border: non;
+  min-width: 120px;
+
+  @include smaller-than(sm) {
+    position: fixed;
+    bottom: 2.5%;
+    right: 4%;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.btn:not([disabled]) {
+  cursor: pointer;
+}
+
+.btn-disabled {
+  pointer-events: none;
+  background: gray;
+}
+
+.btn-auth {
+  min-width: 250px;
+}
+
+.btn-facebook {
+  background-image: $facebook-blue-gradient;
+  text-shadow: $facebook-text-shadow;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0 $padding-xs;
+  border: none;
+  text-align: left;
+  white-space: nowrap;
+  color: $white;
+
+  &:hover,
+  &:focus {
+    background-image: $facebook-blue-gradient-hover;
+  }
+
+  &:focus {
+    outline: none;
+  }
+  &:active {
+    box-shadow: inset 0 0 0 32px rgba(0, 0, 0, 0.1);
+  }
+
+  svg {
+    margin-right: 12px;
+  }
+}
+
+.filter-toggle {
+  &:not([disabled]) {
+    cursor: pointer;
+  }
+  flex-shrink: 2;
+  outline: none;
+  height: 28px;
+  font-weight: bold;
+  padding-left: $btn-lr-padding;
+  padding-right: $btn-lr-padding;
+  border-radius: 14px;
+  border: none;
+  color: gray;
+  background: $sub-background;
+  @include button-bg-darken();
+  font-size: 15px;
+  font-family: sans-serif;
+  &.on {
+    background: $theme-dark-color;
+    @include button-bg-darken();
+    color: white;
+  }
+}
