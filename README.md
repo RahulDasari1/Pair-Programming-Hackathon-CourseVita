@@ -1,4 +1,4 @@
-# BOOKIO | Free book-sharing made easy
+Free book-sharing made easy
 An endeavour for the *Interaction Programming and Dynamic Web* course, 2019 at KTH Royal Institute of Technology.
 
 ## https://bookio-5c798.firebaseapp.com/
