@@ -1,6 +1,8 @@
 # **📚 Book Sharing | Pair-Programming-Hackathon-CourseVita**  
 A **peer-to-peer book-sharing platform** built for the **Pair Programming Hackathon (CourseVita)**.  
 Users can **list, find, exchange, and chat** with nearby book owners!  
+![image](https://github.com/user-attachments/assets/337359da-9174-4195-b2f4-96cc90b224ff)
+
 
 ---
 
