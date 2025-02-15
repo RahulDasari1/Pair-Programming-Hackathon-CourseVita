@@ -6,7 +6,12 @@ Users can **list, find, exchange, and chat** with nearby book owners!
 ---
 
 ## **🌍 Live Demo**
-![image](https://github.com/user-attachments/assets/7d558e61-3ab1-4aa5-83ca-5d353220abe9)
+
+![image](https://github.com/user-attachments/assets/013b104f-0037-4755-bbc9-6bf8e2f79f4c)
+
+![image](https://github.com/user-attachments/assets/ddc534f9-28dc-435c-80e7-22df7c457d7e)
+
+![image](https://github.com/user-attachments/assets/04f70c0d-12c2-4a46-a84b-9a6e56daf912)
 
 
 ---
