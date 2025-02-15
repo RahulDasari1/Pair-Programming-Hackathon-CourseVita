@@ -1,7 +1,3 @@
-Great! Here’s your **personalized README.md** for the **Book Sharing** project, customized for the **Pair Programming Hackathon (CourseVita)**.  
-
----
-
 # **📚 Book Sharing | Pair-Programming-Hackathon-CourseVita**  
 A **peer-to-peer book-sharing platform** built for the **Pair Programming Hackathon (CourseVita)**.  
 Users can **list, find, exchange, and chat** with nearby book owners!  
